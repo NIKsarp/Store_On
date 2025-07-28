@@ -167,8 +167,28 @@ window.addEventListener(`scroll`, () => {
 //     .appendChild(document.createTextNode(currentYear));
 // }
 // // currentYear
-// // -------------------------------------
+// --------------------------------------------
+// Intersection Observer Start
 
+const observeElements = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // ✅ Element is visible in viewport
+      entry.target.classList.add("show")
+    } else {
+      // ❌ Element is outside viewport
+      entry.target.classList.remove("show")
+    }
+  });
+};
+
+const observer = new IntersectionObserver(observeElements, {});
+const elementsToObserve = Array.from(document.getElementsByClassName("card"));
+
+// Start observing each element
+elementsToObserve.forEach((element) => observer.observe(element));
+
+// Intersection Observer End
 // --------------------------------------------
 // currentYear Start
 // Display the Current Year
