@@ -33,8 +33,8 @@ const card = (
   figureImg.alt = alt;
   figureImg.title = title;
 
-  const cardBody = createElement(`div`, `card-body`);
-  const cardTitle = createElement(`h2`, `card-title`, title);
+  const cardBody = createElement(`div`, `card__body`);
+  const cardTitle = createElement(`h2`, `card__title`, title);
 
   const cardPrice = createElement(
     `small`,
@@ -43,7 +43,7 @@ const card = (
   );
 
   const headingContent = createElement(`div`, `heading-content`);
-  const cardText = createElement(`p`, `card-text`, text);
+  const cardText = createElement(`p`, `card__text`, text);
   const btn = createElement(`button`, `card-btn btn`, `buy`);
   const btn2 = createElement(`button`, `card-btn btn`, `add to cart`);
   // const //btnGroup = createElement('div', 'btn-group', [btn, btn2])
@@ -174,10 +174,10 @@ const observeElements = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       // ✅ Element is visible in viewport
-      entry.target.classList.add("show")
+      entry.target.classList.add("show");
     } else {
       // ❌ Element is outside viewport
-      entry.target.classList.remove("show")
+      entry.target.classList.remove("show");
     }
   });
 };

@@ -51,46 +51,99 @@
     <!-- -------------------------------- -->
     <!-- Header Start -->
 
-    <header class="header">
-      <div class="navbar-brand">
+    <header
+      itemscope
+      itemtype="https://schema.org/WPHeader"
+      role="banner"
+      class="header"
+    >
+      <div class="header__navbar-brand">
         <h2>store_on</h2>
       </div>
 
-      <nav class="navbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">home</a>
+      <nav
+        itemscope
+        itemtype="https://schema.org/SiteNavigationElement"
+        role="navigation"
+        aria-label="Main Navigation"
+        id="navbar"
+        class="header__navbar"
+      >
+        <ul class="header__navbar-nav">
+          <li itemprop="name" class="header__nav-item">
+            <a
+              itemprop="url"
+              href="#"
+              aria-current="page"
+              class="header__nav-link"
+              title="Home page"
+              >home</a
+            >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">blog</a>
+          <li itemprop="name" class="header__nav-item">
+            <a href="#" class="header__nav-link">blog</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-btn" href="#">services</a>
+          <li class="header__nav-item dropdown">
+            <a
+              itemprop="url"
+              href="#"
+              class="header__nav-link dropdown-btn"
+              title="Our services"
+              >services</a
+            >
             <ul class="content">
-              <li class="nav-item">
-                <a class="nav-link" href="#">web development</a>
+              <li itemprop="name" class="header__nav-item">
+                <a href="#" class="header__nav-link">web development</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">web design</a>
+              <li itemprop="name" class="header__nav-item">
+                <a href="#" class="header__nav-link">web design</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">app development</a>
+              <li itemprop="name" class="header__nav-item">
+                <a href="#" class="header__nav-link">app development</a>
               </li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">about us</a>
+          <li itemprop="name" class="header__nav-item">
+            <a
+              itemprop="url"
+              href="#"
+              class="header__nav-link"
+              title="About our company"
+              >about us</a
+            >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">contact us</a>
+          <li itemprop="name" class="header__nav-item">
+            <a
+              itemprop="url"
+              href="#"
+              class="header__nav-link"
+              title="Contact information"
+              >contact us</a
+            >
           </li>
         </ul>
       </nav>
 
-      <div class="btn-group">
+      <div
+        role="group"
+        aria-label="User Authentication"
+        class="header__btn-group"
+      >
         <span class="btn" id="add">add</span>
-        <button type="button" class="btn">login</button>
-        <button type="button" class="btn">signup</button>
+        <button
+          type="button"
+          aria-label="Login to your account"
+          class="header__btn"
+        >
+          Login
+        </button>
+        <button
+          type="button"
+          aria-label="Create new account"
+          class="header__btn"
+        >
+          Signup
+        </button>
       </div>
     </header>
 
@@ -125,81 +178,186 @@
     <!-- Footer Start -->
 
     <footer class="footer">
-      <section class="row">
-        <ul class="footer-menu">
-          <li class="footer-item">
+      <section class="footer__row">
+        <ul class="footer__menu">
+          <li itemprop="name" class="footer__item">
             <!-- h5 -->
-            <h3 class="footer-title">quick links</h3>
+            <h3 itemprop="name" class="footer__title">quick links</h3>
           </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">home</a>
+          <li itemprop="name" class="footer__item">
+            <a
+              itemprop="url"
+              href="#"
+              aria-label=""
+              class="footer__link"
+              title=""
+              >home</a
+            >
           </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">about us</a>
+          <li itemprop="name" class="footer__item">
+            <a
+              itemprop="url"
+              href="#"
+              aria-label=""
+              class="footer__link"
+              title=""
+              >about us</a
+            >
           </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">contact us</a>
-          </li>
-        </ul>
-
-        <ul class="footer-menu">
-          <li class="footer-item">
-            <h3 class="footer-title">manage your account</h3>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">settings</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">services</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">your account</a>
-          </li>
-        </ul>
-
-        <ul class="footer-menu">
-          <li class="footer-item">
-            <h3 class="footer-title">company</h3>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">projects</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">portfolio</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">programs</a>
+          <li itemprop="name" class="footer__item">
+            <a
+              itemprop="url"
+              href="#"
+              aria-label=""
+              class="footer__link"
+              title=""
+              >contact us</a
+            >
           </li>
         </ul>
 
-        <ul class="footer-menu">
-          <li class="footer-item">
-            <h3 class="footer-title">connect with us</h3>
+        <ul class="footer__menu">
+          <li itemprop="name" class="footer__item">
+            <h3 itemprop="name" class="footer__title">manage your account</h3>
           </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">twitter</a>
+          <li itemprop="name" class="footer__item">
+            <a
+              itemprop="url"
+              href="#"
+              aria-label=""
+              class="footer__link"
+              title=""
+              >settings</a
+            >
           </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">linkedIn</a>
+          <li itemprop="name" class="footer__item">
+            <a
+              itemprop="url"
+              href="#"
+              aria-label=""
+              class="footer__link"
+              title=""
+              >services</a
+            >
           </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">facebook</a>
+          <li itemprop="name" class="footer__item">
+            <a
+              itemprop="url"
+              href="#"
+              aria-label=""
+              class="footer__link"
+              title=""
+              >your account</a
+            >
+          </li>
+        </ul>
+
+        <ul class="footer__menu">
+          <li itemprop="name" class="footer__item">
+            <h3 itemprop="name" class="footer__title">company</h3>
+          </li>
+          <li itemprop="name" class="footer__item">
+            <a
+              itemprop="url"
+              href="#"
+              aria-label=""
+              class="footer__link"
+              title=""
+              >projects</a
+            >
+          </li>
+          <li itemprop="name" class="footer__item">
+            <a
+              itemprop="url"
+              href="#"
+              aria-label=""
+              class="footer__link"
+              title=""
+              >portfolio</a
+            >
+          </li>
+          <li itemprop="name" class="footer__item">
+            <a
+              itemprop="url"
+              href="#"
+              aria-label=""
+              class="footer__link"
+              title=""
+              >programs</a
+            >
+          </li>
+        </ul>
+
+        <ul class="footer__menu">
+          <li itemprop="name" class="footer__item">
+            <h3 itemprop="name" class="footer__title">connect with us</h3>
+          </li>
+          <li itemprop="name" class="footer__item">
+            <a
+              itemprop="url"
+              href="#"
+              aria-label=""
+              class="footer__link"
+              title=""
+              >twitter</a
+            >
+          </li>
+          <li itemprop="name" class="footer__item">
+            <a
+              itemprop="url"
+              href="#"
+              aria-label=""
+              class="footer__link"
+              title=""
+              >linkedIn</a
+            >
+          </li>
+          <li itemprop="name" class="footer__item">
+            <a
+              itemprop="url"
+              href="#"
+              aria-label=""
+              class="footer__link"
+              title=""
+              >facebook</a
+            >
           </li>
         </ul>
       </section>
 
-      <section class="footer-row">
-        <p class="copyright">
-          copyright &copy; <span id="currentYear"></span> store_on ltd. | all
-          rights reserved
+      <section class="footer__second-row">
+        <p itemprop="copyrightNotice" class="copyright">
+          Copyright &copy; <span id="currentYear"></span
+          ><span
+            itemscope
+            itemtype="https://schema.org/Organization"
+            itemprop="copyrightHolder"
+          >
+            <span itemprop="name"> Ltd.</span>
+          </span>
+          | All Rights Reserved
         </p>
 
-        <ul class="footer-menu">
-          <li class="footer-item">
-            <a class="footer-link" href="#">privacy policy</a>
+        <ul class="footer__menu">
+          <li itemprop="name" class="footer__item">
+            <a
+              itemprop="url"
+              href="/privacy"
+              aria-label="Privacy Policy"
+              class="footer__link"
+              title="Read our privacy policy"
+              >Privacy Policy</a
+            >
           </li>
-          <li class="footer-item">
-            <a class="footer-link" href="#">terms & Conditions</a>
+          <li itemprop="name" class="footer__item">
+            <a
+              itemprop="url"
+              href="/terms"
+              aria-label="Terms and Conditions"
+              class="footer__link"
+              title="Review our terms and conditions"
+              >Terms & Conditions</a
+            >
           </li>
         </ul>
       </section>
