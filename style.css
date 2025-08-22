@@ -53,9 +53,9 @@ p {
 }
 
 .header,
-.header__navbar .header__navbar-nav,
-.header .btn-group,
-.header .btn-group .btn {
+.navbar .navbar__nav,
+.header__btn-group,
+.header__btn {
   display: flex;
   text-transform: capitalize;
 }
@@ -81,12 +81,12 @@ p {
 
 /* -------------------------------------------- */
 
-.header .header__navbar-brand {
+.header .navbar-brand {
   /* padding: 0.75rem 0; */
 }
 
 /* -------------------------------------------- */
-.header__navbar .header__nav-item {
+.navbar .navbar__nav-item {
   cursor: pointer;
   padding: 0.75rem;
   margin: 0 0 0.75rem;
@@ -96,12 +96,12 @@ p {
   */
 }
 
-.header__navbar .dropdown .content {
+.navbar .dropdown .content {
   display: none;
   position: relative;
 }
 
-.header__navbar .dropdown:hover .content {
+.navbar .dropdown:hover .content {
   display: block;
   position: absolute;
   top: 100%;
@@ -113,7 +113,7 @@ p {
   box-shadow: 0 0.75rem 0.75rem #12121220, inset 0 -0.75rem 0.75rem #12121220;
 }
 
-.header__navbar .header__nav-item:hover {
+.navbar .navbar__nav-item:hover {
   background-color: #fffffe20;
   --blur: blur(1rem) saturate(180%);
   /* --border: 1px solid #fffffe20;
@@ -126,11 +126,11 @@ p {
 }
 
 /* -------------------------------------------- */
-.header .btn-group {
+.header__btn-group {
   gap: 10px;
 }
 
-.header .btn-group .btn {
+.header__btn {
   /* font-weight: 700; */
   padding: 0.5rem 1.5rem;
   border-radius: 0.75rem;
@@ -144,11 +144,11 @@ p {
   justify-content: center;
 }
 
-.header .btn-group .btn:hover {
+.header__btn:hover {
   background: #fffffe80;
 }
 
-.header .btn-group .btn:nth-child(2) {
+.header__btn:nth-child(2) {
   background: #aa4b6b;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right,
@@ -176,13 +176,13 @@ p {
 
 /* -------------------------------------------- */
 @media only screen and (max-width: 480px) {
-  .header .btn-group .btn:last-child {
+  .header__btn:last-child {
     display: none;
   }
 }
 
 @media only screen and (max-width: 857px) {
-  .header .header__navbar {
+  .navbar {
     display: none;
   }
 }
